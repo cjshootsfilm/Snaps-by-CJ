@@ -1,1 +1,208 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Snaps by CJ — film photography from Devon, UK."><title>Snaps by CJ — Film Photography</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Libre+Caslon+Display&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header id="header"><a class="logo" href="#home">Snaps by CJ</a><button id="menu">Menu</button><nav><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav></header><main><section class="hero" id="home"><img src="images/red-bridge.jpeg" alt="Red steel bridge photographed on film"><div class="shade"></div><div class="hero-copy"><p class="kicker">Film photography · Devon, UK</p><h1>Snaps<br>by CJ</h1><p>Architecture, coastlines and everyday moments captured on film and iPhone.</p></div><a class="scroll" href="#work">View work ↓</a></section><section class="section" id="work"><div class="section-head"><div><p class="kicker">Selected photographs</p><h2>Places, light and quiet moments.</h2></div><p>35mm film · Paper camera · iPhone</p></div><div class="gallery"><button class="photo wide" data-src="images/red-bridge.jpeg"><img src="images/red-bridge.jpeg" alt="Red steel bridge" loading="lazy"></button><button class="photo " data-src="images/clock-tower.jpeg"><img src="images/clock-tower.jpeg" alt="Clock tower" loading="lazy"></button><button class="photo " data-src="images/street-light.jpeg"><img src="images/street-light.jpeg" alt="Street light at dusk" loading="lazy"></button><button class="photo " data-src="images/lifeguard-tower.jpeg"><img src="images/lifeguard-tower.jpeg" alt="Lifeguard tower" loading="lazy"></button><button class="photo " data-src="images/paraglider.jpeg"><img src="images/paraglider.jpeg" alt="Paraglider under clouds" loading="lazy"></button><button class="photo wide" data-src="images/escalators.jpeg"><img src="images/escalators.jpeg" alt="Illuminated escalators" loading="lazy"></button><button class="photo " data-src="images/bridge-dusk.jpeg"><img src="images/bridge-dusk.jpeg" alt="Bridge at dusk" loading="lazy"></button><button class="photo wide" data-src="images/beach-pier.jpeg"><img src="images/beach-pier.jpeg" alt="Beach and pier" loading="lazy"></button><button class="photo wide" data-src="images/pier-light-leak.jpeg"><img src="images/pier-light-leak.jpeg" alt="Pier with film light leak" loading="lazy"></button></div></section><section class="section about" id="about"><div><p class="kicker">About</p><h2>Hi, I’m CJ.</h2></div><div><p>I’m a photographer based in Devon, UK. I photograph architecture, coastlines and everyday moments using 35mm film cameras, paper cameras and iPhone.</p><p>I enjoy the grain, colour shifts and imperfections that give each photograph its own character.</p><div class="stocks"><span>Fujifilm 200</span><span>Kodak Gold</span><span>Kodak Ultramax 400</span><span>Ilford HP5</span></div></div></section><section class="section contact" id="contact"><p class="kicker">Contact</p><h2>Prints, projects and enquiries.</h2><a href="https://www.instagram.com/snaps_bycj" target="_blank">Instagram — @snaps_bycj</a><a href="mailto:cjshootsfilm@gmail.com">Email — cjshootsfilm@gmail.com</a></section></main><footer>© <span id="year"></span> Snaps by CJ <span>Devon, United Kingdom</span></footer><dialog id="lightbox"><button>Close</button><img alt=""></dialog><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Snaps by CJ — film and everyday photography from Devon, UK. Architecture, coastlines, street scenes and experiments photographed on 35mm film, paper cameras and iPhone.">
+  <meta name="theme-color" content="#0b0b0a">
+
+  <meta property="og:title" content="Snaps by CJ — Photography Portfolio">
+  <meta property="og:description" content="Architecture, coastlines and everyday moments captured on film and iPhone.">
+  <meta property="og:image" content="images/red-bridge.jpeg">
+  <meta property="og:type" content="website">
+
+  <title>Snaps by CJ — Photography Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header" id="header">
+    <a class="logo" href="#home" aria-label="Snaps by CJ home">Snaps by CJ</a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      Menu
+    </button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="images/red-bridge.jpeg" alt="Red steel bridge photographed on film" fetchpriority="high">
+      <div class="hero-shade"></div>
+
+      <div class="hero-copy">
+        <p class="kicker">Photography · Devon, UK</p>
+        <h1>Snaps<br>by CJ</h1>
+        <p class="intro">Architecture, coastlines and everyday moments captured on 35mm film, paper cameras and iPhone.</p>
+      </div>
+
+      <a class="scroll-link" href="#work">View work <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="section-top">
+        <div>
+          <p class="kicker">Selected photographs</p>
+          <h2>Places, light and quiet moments.</h2>
+        </div>
+        <p class="section-note">Film · Paper camera · iPhone</p>
+      </div>
+
+      <div class="filters" aria-label="Filter portfolio">
+        <button class="filter active" type="button" data-filter="all">All</button>
+        <button class="filter" type="button" data-filter="architecture">Architecture</button>
+        <button class="filter" type="button" data-filter="coast">Coast</button>
+        <button class="filter" type="button" data-filter="street">Street</button>
+        <button class="filter" type="button" data-filter="experimental">Experimental</button>
+      </div>
+
+      <div class="gallery">
+        <button class="frame feature" type="button"
+          data-category="architecture"
+          data-image="images/red-bridge.jpeg"
+          data-title="Bridge Study">
+          <img src="images/red-bridge.jpeg" alt="Red steel bridge" loading="lazy">
+          <span class="caption">Bridge Study</span>
+        </button>
+
+        <button class="frame portrait" type="button"
+          data-category="architecture street"
+          data-image="images/clock-tower.jpeg"
+          data-title="City Layers">
+          <img src="images/clock-tower.jpeg" alt="Clock tower beside modern buildings" loading="lazy">
+          <span class="caption">City Layers</span>
+        </button>
+
+        <button class="frame" type="button"
+          data-category="street"
+          data-image="images/street-light.jpeg"
+          data-title="Evening Light">
+          <img src="images/street-light.jpeg" alt="Street light beneath a purple evening sky" loading="lazy">
+          <span class="caption">Evening Light</span>
+        </button>
+
+        <button class="frame" type="button"
+          data-category="coast"
+          data-image="images/lifeguard-tower.jpeg"
+          data-title="After Hours">
+          <img src="images/lifeguard-tower.jpeg" alt="Lifeguard tower near the coast" loading="lazy">
+          <span class="caption">After Hours</span>
+        </button>
+
+        <button class="frame" type="button"
+          data-category="experimental coast"
+          data-image="images/paraglider.jpeg"
+          data-title="Open Sky">
+          <img src="images/paraglider.jpeg" alt="Paraglider beneath large clouds" loading="lazy">
+          <span class="caption">Open Sky</span>
+        </button>
+
+        <button class="frame feature" type="button"
+          data-category="architecture street experimental"
+          data-image="images/escalators.jpeg"
+          data-title="Wintergarden">
+          <img src="images/escalators.jpeg" alt="Escalators lit in green and purple" loading="lazy">
+          <span class="caption">Wintergarden</span>
+        </button>
+
+        <button class="frame" type="button"
+          data-category="architecture street"
+          data-image="images/bridge-dusk.jpeg"
+          data-title="Last Light">
+          <img src="images/bridge-dusk.jpeg" alt="Bridge silhouetted at dusk" loading="lazy">
+          <span class="caption">Last Light</span>
+        </button>
+
+        <button class="frame feature" type="button"
+          data-category="coast"
+          data-image="images/beach-pier.jpeg"
+          data-title="By the Pier">
+          <img src="images/beach-pier.jpeg" alt="People in the sea beside a pier" loading="lazy">
+          <span class="caption">By the Pier</span>
+        </button>
+
+        <button class="frame feature" type="button"
+          data-category="coast experimental"
+          data-image="images/pier-light-leak.jpeg"
+          data-title="Light Leak">
+          <img src="images/pier-light-leak.jpeg" alt="Pier photographed with a vivid film light leak" loading="lazy">
+          <span class="caption">Light Leak</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section statement">
+      <p class="kicker">Approach</p>
+      <blockquote>
+        I photograph the places and small moments that make me stop and look twice.
+      </blockquote>
+    </section>
+
+    <section class="section about" id="about">
+      <div>
+        <p class="kicker">About</p>
+        <h2>Hi, I’m CJ.</h2>
+      </div>
+
+      <div class="about-copy">
+        <p>I’m a photographer based in Devon, UK. I photograph architecture, coastlines, street scenes and everyday moments using 35mm film cameras, paper cameras and iPhone.</p>
+
+        <p>I’m drawn to structure, natural light and scenes that feel quiet or slightly unexpected. I enjoy the grain, colour shifts and imperfections that give each photograph its own character.</p>
+
+        <div class="details-grid">
+          <div>
+            <h3>Cameras</h3>
+            <p>35mm film cameras<br>Paper cameras<br>iPhone</p>
+          </div>
+
+          <div>
+            <h3>Film stocks</h3>
+            <p>Fujifilm 200<br>Kodak Gold<br>Kodak Ultramax 400<br>Ilford HP5 and others</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <p class="kicker">Contact</p>
+      <h2>Prints, projects and enquiries.</h2>
+
+      <div class="contact-links">
+        <a href="https://www.instagram.com/snaps_bycj" target="_blank" rel="noopener noreferrer">
+          <span>Instagram</span>
+          <strong>@snaps_bycj</strong>
+        </a>
+
+        <a href="mailto:cjshootsfilm@gmail.com">
+          <span>Email</span>
+          <strong>cjshootsfilm@gmail.com</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Snaps by CJ</span>
+    <span>Devon, United Kingdom</span>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Close photograph">Close</button>
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
